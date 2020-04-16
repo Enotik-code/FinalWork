@@ -1,62 +1,90 @@
 package com.company.enums;
 
-public class Category {
-    public enum CategoryList {
-        Grocery, Gastronomy, BabyFood,
-        DietFood, FrozenProducts, Confectionery,
-        Cookery, Dairy, Meat, Bird, Egg, SoftDrinks, Fish,
-        Seafood, SportsNutrition, Fruits, Vegetables, Mushrooms,
-        BakeryProducts, Tea, Coffee, Cocoa, OtherProducts
+public enum Category {
+    GROCERY("Grocery"),
+    GASTRONOMY("Gastronomy"),
+    BABYFOOD("BabyFood"),
+    DIETFOOD("DietFood"),
+    FROZENPRODUCTS("FrozenProducts"),
+    CONFECTIONERY("Confectionery"),
+    COOKERY("Cookery"),
+    DAIRY("Dairy"),
+    MEAT("Meat"),
+    BIRD("Bird"),
+    EGG("Egg"),
+    SOFTDRINKS("SoftDrinks"),
+    FISH("Fish"),
+    SEAFOOD("Seafood"),
+    SPORTSNUTRITION("SportsNutrition"),
+    FRUITS("Fruits"),
+    VEGETABLES("Vegetables"),
+    MUSHROOMS("Mushrooms"),
+    BAKERYPRODUCTS("BakeryProducts"),
+    TEA("Tea"),
+    COFFEE("Coffee"),
+    COCOA("Cocoa"),
+    OTHERPRODUCTS("OtherProducts");
+
+    private final String description;
+
+    Category(String description) {
+        this.description = description;
     }
 
-    public static CategoryList chooseCategory(int a) {
+    public static Category chooseCategory(int a) {
         switch (a) {
             case 1:
-                return CategoryList.Grocery;
+                return Category.GROCERY;
             case 2:
-                return CategoryList.Gastronomy;
+                return Category.GASTRONOMY;
             case 3:
-                return CategoryList.BabyFood;
+                return Category.BABYFOOD;
             case 4:
-                return CategoryList.DietFood;
+                return Category.DIETFOOD;
             case 5:
-                return CategoryList.FrozenProducts;
+                return Category.FROZENPRODUCTS;
             case 6:
-                return CategoryList.Confectionery;
+                return Category.CONFECTIONERY;
             case 7:
-                return CategoryList.Cookery;
+                return Category.COOKERY;
             case 8:
-                return CategoryList.Dairy;
+                return Category.DAIRY;
             case 9:
-                return CategoryList.Meat;
+                return Category.MEAT;
             case 10:
-                return CategoryList.Bird;
+                return Category.BIRD;
             case 11:
-                return CategoryList.Egg;
+                return Category.EGG;
             case 12:
-                return CategoryList.SoftDrinks;
+                return Category.SOFTDRINKS;
             case 13:
-                return CategoryList.Fish;
+                return Category.FISH;
             case 14:
-                return CategoryList.Seafood;
+                return Category.SEAFOOD;
             case 15:
-                return CategoryList.SportsNutrition;
+                return Category.SPORTSNUTRITION;
             case 16:
-                return CategoryList.Fruits;
+                return Category.FRUITS;
             case 17:
-                return CategoryList.Vegetables;
+                return Category.VEGETABLES;
             case 18:
-                return CategoryList.Mushrooms;
+                return Category.MUSHROOMS;
             case 19:
-                return CategoryList.BakeryProducts;
+                return Category.BAKERYPRODUCTS;
             case 20:
-                return CategoryList.Tea;
+                return Category.TEA;
             case 21:
-                return CategoryList.Coffee;
+                return Category.COFFEE;
             case 22:
-                return CategoryList.Cocoa;
+                return Category.COCOA;
         }
-        return CategoryList.OtherProducts;
+        return Category.OTHERPRODUCTS;
     }
 
+    public static void showCategoryList() {
+        for (int i = 0; i < Category.values().length; i++) {
+            System.out.println((i+1) + ". " + Category.values()[i].description);
+        }
+    }
 }
+

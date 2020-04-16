@@ -1,0 +1,317 @@
+2020-04-17 00:48:24 INFO  Menu:25 - 1. Add the product
+2020-04-17 00:48:24 INFO  Menu:25 - 2. Remove product
+2020-04-17 00:48:24 INFO  Menu:25 - 3. Find the product
+2020-04-17 00:48:24 INFO  Menu:25 - 4. Display all products
+2020-04-17 00:48:24 INFO  Menu:25 - 5. Change product information
+2020-04-17 00:48:24 INFO  Menu:25 - 6. Filtration
+2020-04-17 00:48:24 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 00:48:24 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 00:48:24 INFO  Menu:25 - 9. Exit
+2020-04-17 00:48:28 INFO  EmbeddedProductDataBase:195 - Enter a name
+2020-04-17 00:48:31 INFO  EmbeddedProductDataBase:200 - Enter price
+2020-04-17 00:48:32 INFO  EmbeddedProductDataBase:205 - Enter a discount
+2020-04-17 00:51:23 INFO  Menu:25 - 1. Add the product
+2020-04-17 00:51:23 INFO  Menu:25 - 2. Remove product
+2020-04-17 00:51:23 INFO  Menu:25 - 3. Find the product
+2020-04-17 00:51:23 INFO  Menu:25 - 4. Display all products
+2020-04-17 00:51:23 INFO  Menu:25 - 5. Change product information
+2020-04-17 00:51:23 INFO  Menu:25 - 6. Filtration
+2020-04-17 00:51:23 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 00:51:23 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 00:51:23 INFO  Menu:25 - 9. Exit
+2020-04-17 00:51:25 INFO  EmbeddedProductDataBase:196 - Enter a name
+2020-04-17 00:51:27 INFO  EmbeddedProductDataBase:201 - Enter price
+2020-04-17 00:51:29 INFO  EmbeddedProductDataBase:206 - Enter a discount
+2020-04-17 00:51:31 INFO  EmbeddedProductDataBase:191 - Enter a description
+2020-04-17 00:51:48 INFO  EmbeddedProductDataBase:103 - Product successfully added
+2020-04-17 00:51:48 INFO  Menu:25 - 1. Add the product
+2020-04-17 00:51:48 INFO  Menu:25 - 2. Remove product
+2020-04-17 00:51:48 INFO  Menu:25 - 3. Find the product
+2020-04-17 00:51:48 INFO  Menu:25 - 4. Display all products
+2020-04-17 00:51:48 INFO  Menu:25 - 5. Change product information
+2020-04-17 00:51:48 INFO  Menu:25 - 6. Filtration
+2020-04-17 00:51:48 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 00:51:48 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 00:51:48 INFO  Menu:25 - 9. Exit
+2020-04-17 00:51:55 INFO  EmbeddedProductDataBase:55 - Product ID:[0]Product's name[apple]
+2020-04-17 00:51:55 INFO  Menu:25 - 1. Add the product
+2020-04-17 00:51:55 INFO  Menu:25 - 2. Remove product
+2020-04-17 00:51:55 INFO  Menu:25 - 3. Find the product
+2020-04-17 00:51:55 INFO  Menu:25 - 4. Display all products
+2020-04-17 00:51:55 INFO  Menu:25 - 5. Change product information
+2020-04-17 00:51:55 INFO  Menu:25 - 6. Filtration
+2020-04-17 00:51:55 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 00:51:55 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 00:51:55 INFO  Menu:25 - 9. Exit
+2020-04-17 00:52:13 INFO  EmbeddedProductDataBase:206 - Enter a discount
+2020-04-17 00:52:15 INFO  EmbeddedProductDataBase:177 - Successfully changes
+2020-04-17 00:52:15 INFO  Menu:25 - 1. Add the product
+2020-04-17 00:52:15 INFO  Menu:25 - 2. Remove product
+2020-04-17 00:52:15 INFO  Menu:25 - 3. Find the product
+2020-04-17 00:52:15 INFO  Menu:25 - 4. Display all products
+2020-04-17 00:52:15 INFO  Menu:25 - 5. Change product information
+2020-04-17 00:52:15 INFO  Menu:25 - 6. Filtration
+2020-04-17 00:52:15 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 00:52:15 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 00:52:15 INFO  Menu:25 - 9. Exit
+2020-04-17 00:52:19 INFO  EmbeddedProductDataBase:67 - Enter ID
+2020-04-17 00:52:20 INFO  EmbeddedProductDataBase:82 - Name: apple
+2020-04-17 00:52:20 INFO  EmbeddedProductDataBase:83 - ID: 0
+2020-04-17 00:52:20 INFO  EmbeddedProductDataBase:84 - Price: 45
+2020-04-17 00:52:20 INFO  EmbeddedProductDataBase:85 - Discount: 45
+2020-04-17 00:52:20 INFO  EmbeddedProductDataBase:86 - Description: tasty apples
+2020-04-17 00:52:20 INFO  EmbeddedProductDataBase:87 - Actual price: -1955
+2020-04-17 00:52:20 INFO  EmbeddedProductDataBase:88 - Category: SPORTSNUTRITION
+
+2020-04-17 00:52:20 INFO  Menu:25 - 1. Add the product
+2020-04-17 00:52:20 INFO  Menu:25 - 2. Remove product
+2020-04-17 00:52:20 INFO  Menu:25 - 3. Find the product
+2020-04-17 00:52:20 INFO  Menu:25 - 4. Display all products
+2020-04-17 00:52:20 INFO  Menu:25 - 5. Change product information
+2020-04-17 00:52:20 INFO  Menu:25 - 6. Filtration
+2020-04-17 00:52:20 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 00:52:20 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 00:52:20 INFO  Menu:25 - 9. Exit
+2020-04-17 00:52:35 INFO  EmbeddedProductDataBase:55 - Product ID:[0]Product's name[apple]
+2020-04-17 00:52:35 INFO  Menu:25 - 1. Add the product
+2020-04-17 00:52:35 INFO  Menu:25 - 2. Remove product
+2020-04-17 00:52:35 INFO  Menu:25 - 3. Find the product
+2020-04-17 00:52:35 INFO  Menu:25 - 4. Display all products
+2020-04-17 00:52:35 INFO  Menu:25 - 5. Change product information
+2020-04-17 00:52:35 INFO  Menu:25 - 6. Filtration
+2020-04-17 00:52:35 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 00:52:35 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 00:52:35 INFO  Menu:25 - 9. Exit
+2020-04-17 00:52:50 INFO  EmbeddedProductDataBase:177 - Successfully changes
+2020-04-17 00:52:50 INFO  Menu:25 - 1. Add the product
+2020-04-17 00:52:50 INFO  Menu:25 - 2. Remove product
+2020-04-17 00:52:50 INFO  Menu:25 - 3. Find the product
+2020-04-17 00:52:50 INFO  Menu:25 - 4. Display all products
+2020-04-17 00:52:50 INFO  Menu:25 - 5. Change product information
+2020-04-17 00:52:50 INFO  Menu:25 - 6. Filtration
+2020-04-17 00:52:50 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 00:52:50 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 00:52:50 INFO  Menu:25 - 9. Exit
+2020-04-17 00:52:53 INFO  EmbeddedProductDataBase:196 - Enter a name
+2020-04-17 00:53:00 INFO  EmbeddedProductDataBase:201 - Enter price
+2020-04-17 00:53:01 INFO  EmbeddedProductDataBase:206 - Enter a discount
+2020-04-17 00:53:02 INFO  EmbeddedProductDataBase:191 - Enter a description
+2020-04-17 00:53:07 INFO  EmbeddedProductDataBase:103 - Product successfully added
+2020-04-17 00:53:07 INFO  Menu:25 - 1. Add the product
+2020-04-17 00:53:07 INFO  Menu:25 - 2. Remove product
+2020-04-17 00:53:07 INFO  Menu:25 - 3. Find the product
+2020-04-17 00:53:07 INFO  Menu:25 - 4. Display all products
+2020-04-17 00:53:07 INFO  Menu:25 - 5. Change product information
+2020-04-17 00:53:07 INFO  Menu:25 - 6. Filtration
+2020-04-17 00:53:07 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 00:53:07 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 00:53:07 INFO  Menu:25 - 9. Exit
+2020-04-17 00:53:13 INFO  EmbeddedProductDataBase:67 - Enter ID
+2020-04-17 00:53:14 INFO  EmbeddedProductDataBase:82 - Name: meat
+2020-04-17 00:53:14 INFO  EmbeddedProductDataBase:83 - ID: 1
+2020-04-17 00:53:14 INFO  EmbeddedProductDataBase:84 - Price: 45
+2020-04-17 00:53:14 INFO  EmbeddedProductDataBase:85 - Discount: 0.6
+2020-04-17 00:53:14 INFO  EmbeddedProductDataBase:86 - Description: asdas
+2020-04-17 00:53:14 INFO  EmbeddedProductDataBase:87 - Actual price: 18
+2020-04-17 00:53:14 INFO  EmbeddedProductDataBase:88 - Category: DAIRY
+
+2020-04-17 00:53:14 INFO  Menu:25 - 1. Add the product
+2020-04-17 00:53:14 INFO  Menu:25 - 2. Remove product
+2020-04-17 00:53:14 INFO  Menu:25 - 3. Find the product
+2020-04-17 00:53:14 INFO  Menu:25 - 4. Display all products
+2020-04-17 00:53:14 INFO  Menu:25 - 5. Change product information
+2020-04-17 00:53:14 INFO  Menu:25 - 6. Filtration
+2020-04-17 00:53:14 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 00:53:14 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 00:53:14 INFO  Menu:25 - 9. Exit
+2020-04-17 00:55:11 INFO  Menu:25 - 1. Add the product
+2020-04-17 00:55:11 INFO  Menu:25 - 2. Remove product
+2020-04-17 00:55:11 INFO  Menu:25 - 3. Find the product
+2020-04-17 00:55:11 INFO  Menu:25 - 4. Display all products
+2020-04-17 00:55:11 INFO  Menu:25 - 5. Change product information
+2020-04-17 00:55:11 INFO  Menu:25 - 6. Filtration
+2020-04-17 00:55:11 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 00:55:11 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 00:55:11 INFO  Menu:25 - 9. Exit
+2020-04-17 00:55:12 INFO  EmbeddedProductDataBase:196 - Enter a name
+2020-04-17 00:55:14 INFO  EmbeddedProductDataBase:201 - Enter price
+2020-04-17 00:55:15 INFO  EmbeddedProductDataBase:206 - Enter a discount
+2020-04-17 00:55:17 INFO  EmbeddedProductDataBase:191 - Enter a description
+2020-04-17 00:55:25 INFO  EmbeddedProductDataBase:103 - Product successfully added
+2020-04-17 00:55:25 INFO  Menu:25 - 1. Add the product
+2020-04-17 00:55:25 INFO  Menu:25 - 2. Remove product
+2020-04-17 00:55:25 INFO  Menu:25 - 3. Find the product
+2020-04-17 00:55:25 INFO  Menu:25 - 4. Display all products
+2020-04-17 00:55:25 INFO  Menu:25 - 5. Change product information
+2020-04-17 00:55:25 INFO  Menu:25 - 6. Filtration
+2020-04-17 00:55:25 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 00:55:25 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 00:55:25 INFO  Menu:25 - 9. Exit
+2020-04-17 00:55:27 INFO  EmbeddedProductDataBase:67 - Enter ID
+2020-04-17 00:55:28 INFO  EmbeddedProductDataBase:82 - Name: apple
+2020-04-17 00:55:28 INFO  EmbeddedProductDataBase:83 - ID: 0
+2020-04-17 00:55:28 INFO  EmbeddedProductDataBase:84 - Price: 45
+2020-04-17 00:55:28 INFO  EmbeddedProductDataBase:85 - Discount: 0.8
+2020-04-17 00:55:28 INFO  EmbeddedProductDataBase:86 - Description: tasty apples
+2020-04-17 00:55:28 INFO  EmbeddedProductDataBase:87 - Actual price: 9
+2020-04-17 00:55:28 INFO  EmbeddedProductDataBase:88 - Category: SEAFOOD
+
+2020-04-17 00:55:28 INFO  Menu:25 - 1. Add the product
+2020-04-17 00:55:28 INFO  Menu:25 - 2. Remove product
+2020-04-17 00:55:28 INFO  Menu:25 - 3. Find the product
+2020-04-17 00:55:28 INFO  Menu:25 - 4. Display all products
+2020-04-17 00:55:28 INFO  Menu:25 - 5. Change product information
+2020-04-17 00:55:28 INFO  Menu:25 - 6. Filtration
+2020-04-17 00:55:28 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 00:55:28 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 00:55:28 INFO  Menu:25 - 9. Exit
+2020-04-17 00:55:46 INFO  Menu:25 - 1. Add the product
+2020-04-17 00:55:46 INFO  Menu:25 - 2. Remove product
+2020-04-17 00:55:46 INFO  Menu:25 - 3. Find the product
+2020-04-17 00:55:46 INFO  Menu:25 - 4. Display all products
+2020-04-17 00:55:46 INFO  Menu:25 - 5. Change product information
+2020-04-17 00:55:46 INFO  Menu:25 - 6. Filtration
+2020-04-17 00:55:46 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 00:55:46 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 00:55:46 INFO  Menu:25 - 9. Exit
+2020-04-17 00:55:47 INFO  EmbeddedProductDataBase:196 - Enter a name
+2020-04-17 00:55:49 INFO  EmbeddedProductDataBase:201 - Enter price
+2020-04-17 00:55:51 INFO  EmbeddedProductDataBase:206 - Enter a discount
+2020-04-17 00:55:51 INFO  EmbeddedProductDataBase:191 - Enter a description
+2020-04-17 00:55:55 INFO  EmbeddedProductDataBase:103 - Product successfully added
+2020-04-17 00:55:55 INFO  Menu:25 - 1. Add the product
+2020-04-17 00:55:55 INFO  Menu:25 - 2. Remove product
+2020-04-17 00:55:55 INFO  Menu:25 - 3. Find the product
+2020-04-17 00:55:55 INFO  Menu:25 - 4. Display all products
+2020-04-17 00:55:55 INFO  Menu:25 - 5. Change product information
+2020-04-17 00:55:55 INFO  Menu:25 - 6. Filtration
+2020-04-17 00:55:55 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 00:55:55 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 00:55:55 INFO  Menu:25 - 9. Exit
+2020-04-17 00:56:01 INFO  EmbeddedProductDataBase:67 - Enter ID
+2020-04-17 00:56:03 INFO  EmbeddedProductDataBase:82 - Name: apple
+2020-04-17 00:56:03 INFO  EmbeddedProductDataBase:83 - ID: 0
+2020-04-17 00:56:03 INFO  EmbeddedProductDataBase:84 - Price: 48
+2020-04-17 00:56:03 INFO  EmbeddedProductDataBase:85 - Discount: 0.2
+2020-04-17 00:56:03 INFO  EmbeddedProductDataBase:86 - Description: asd
+2020-04-17 00:56:03 INFO  EmbeddedProductDataBase:87 - Actual price: 38.4
+2020-04-17 00:56:03 INFO  EmbeddedProductDataBase:88 - Category: VEGETABLES
+
+2020-04-17 00:56:03 INFO  Menu:25 - 1. Add the product
+2020-04-17 00:56:03 INFO  Menu:25 - 2. Remove product
+2020-04-17 00:56:03 INFO  Menu:25 - 3. Find the product
+2020-04-17 00:56:03 INFO  Menu:25 - 4. Display all products
+2020-04-17 00:56:03 INFO  Menu:25 - 5. Change product information
+2020-04-17 00:56:03 INFO  Menu:25 - 6. Filtration
+2020-04-17 00:56:03 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 00:56:03 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 00:56:03 INFO  Menu:25 - 9. Exit
+2020-04-17 01:10:38 INFO  Menu:25 - 1. Add the product
+2020-04-17 01:10:38 INFO  Menu:25 - 2. Remove product
+2020-04-17 01:10:38 INFO  Menu:25 - 3. Find the product
+2020-04-17 01:10:38 INFO  Menu:25 - 4. Display all products
+2020-04-17 01:10:38 INFO  Menu:25 - 5. Change product information
+2020-04-17 01:10:38 INFO  Menu:25 - 6. Filtration
+2020-04-17 01:10:38 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 01:10:38 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 01:10:38 INFO  Menu:25 - 9. Exit
+2020-04-17 01:10:40 INFO  EmbeddedProductDataBase:191 - Enter a name
+2020-04-17 01:10:42 INFO  EmbeddedProductDataBase:196 - Enter price
+2020-04-17 01:10:43 INFO  EmbeddedProductDataBase:201 - Enter a discount
+2020-04-17 01:10:45 INFO  EmbeddedProductDataBase:186 - Enter a description
+2020-04-17 01:10:52 INFO  Menu:25 - 1. Add the product
+2020-04-17 01:10:52 INFO  Menu:25 - 2. Remove product
+2020-04-17 01:10:52 INFO  Menu:25 - 3. Find the product
+2020-04-17 01:10:52 INFO  Menu:25 - 4. Display all products
+2020-04-17 01:10:52 INFO  Menu:25 - 5. Change product information
+2020-04-17 01:10:52 INFO  Menu:25 - 6. Filtration
+2020-04-17 01:10:52 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 01:10:52 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 01:10:52 INFO  Menu:25 - 9. Exit
+2020-04-17 01:10:53 INFO  EmbeddedProductDataBase:191 - Enter a name
+2020-04-17 01:10:55 INFO  EmbeddedProductDataBase:196 - Enter price
+2020-04-17 01:10:57 INFO  EmbeddedProductDataBase:201 - Enter a discount
+2020-04-17 01:11:00 INFO  EmbeddedProductDataBase:186 - Enter a description
+2020-04-17 01:15:31 INFO  Menu:25 - 1. Add the product
+2020-04-17 01:15:31 INFO  Menu:25 - 2. Remove product
+2020-04-17 01:15:31 INFO  Menu:25 - 3. Find the product
+2020-04-17 01:15:31 INFO  Menu:25 - 4. Display all products
+2020-04-17 01:15:31 INFO  Menu:25 - 5. Change product information
+2020-04-17 01:15:31 INFO  Menu:25 - 6. Filtration
+2020-04-17 01:15:31 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 01:15:31 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 01:15:31 INFO  Menu:25 - 9. Exit
+2020-04-17 01:15:33 INFO  EmbeddedProductDataBase:191 - Enter a name
+2020-04-17 01:15:35 INFO  EmbeddedProductDataBase:196 - Enter price
+2020-04-17 01:15:37 WARN  MenuService:36 - This not a number
+2020-04-17 01:15:39 INFO  EmbeddedProductDataBase:201 - Enter a discount
+2020-04-17 01:15:41 INFO  EmbeddedProductDataBase:186 - Enter a description
+2020-04-17 01:15:46 INFO  EmbeddedProductDataBase:98 - Product successfully added
+2020-04-17 01:15:46 INFO  Menu:25 - 1. Add the product
+2020-04-17 01:15:46 INFO  Menu:25 - 2. Remove product
+2020-04-17 01:15:46 INFO  Menu:25 - 3. Find the product
+2020-04-17 01:15:46 INFO  Menu:25 - 4. Display all products
+2020-04-17 01:15:46 INFO  Menu:25 - 5. Change product information
+2020-04-17 01:15:46 INFO  Menu:25 - 6. Filtration
+2020-04-17 01:15:46 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 01:15:46 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 01:15:46 INFO  Menu:25 - 9. Exit
+2020-04-17 01:15:49 INFO  EmbeddedProductDataBase:181 - Enter ID
+2020-04-17 01:15:49 INFO  EmbeddedProductDataBase:78 - Name: hjkhjk
+2020-04-17 01:15:49 INFO  EmbeddedProductDataBase:79 - ID: 0
+2020-04-17 01:15:49 INFO  EmbeddedProductDataBase:80 - Price: 45
+2020-04-17 01:15:49 INFO  EmbeddedProductDataBase:81 - Discount: 0.3
+2020-04-17 01:15:49 INFO  EmbeddedProductDataBase:82 - Description: jhljkl
+2020-04-17 01:15:49 INFO  EmbeddedProductDataBase:83 - Actual price: 31
+2020-04-17 01:15:49 INFO  EmbeddedProductDataBase:84 - Category: DAIRY
+
+2020-04-17 01:15:49 INFO  Menu:25 - 1. Add the product
+2020-04-17 01:15:49 INFO  Menu:25 - 2. Remove product
+2020-04-17 01:15:49 INFO  Menu:25 - 3. Find the product
+2020-04-17 01:15:49 INFO  Menu:25 - 4. Display all products
+2020-04-17 01:15:49 INFO  Menu:25 - 5. Change product information
+2020-04-17 01:15:49 INFO  Menu:25 - 6. Filtration
+2020-04-17 01:15:49 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 01:15:49 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 01:15:49 INFO  Menu:25 - 9. Exit
+2020-04-17 01:17:31 INFO  Menu:25 - 1. Add the product
+2020-04-17 01:17:31 INFO  Menu:25 - 2. Remove product
+2020-04-17 01:17:31 INFO  Menu:25 - 3. Find the product
+2020-04-17 01:17:31 INFO  Menu:25 - 4. Display all products
+2020-04-17 01:17:31 INFO  Menu:25 - 5. Change product information
+2020-04-17 01:17:31 INFO  Menu:25 - 6. Filtration
+2020-04-17 01:17:31 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 01:17:31 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 01:17:31 INFO  Menu:25 - 9. Exit
+2020-04-17 01:17:33 INFO  EmbeddedProductDataBase:191 - Enter a name
+2020-04-17 01:17:35 INFO  EmbeddedProductDataBase:196 - Enter price
+2020-04-17 01:17:36 INFO  EmbeddedProductDataBase:201 - Enter a discount
+2020-04-17 01:17:38 INFO  EmbeddedProductDataBase:186 - Enter a description
+2020-04-17 01:17:42 INFO  EmbeddedProductDataBase:98 - Product successfully added
+2020-04-17 01:17:42 INFO  Menu:25 - 1. Add the product
+2020-04-17 01:17:42 INFO  Menu:25 - 2. Remove product
+2020-04-17 01:17:42 INFO  Menu:25 - 3. Find the product
+2020-04-17 01:17:42 INFO  Menu:25 - 4. Display all products
+2020-04-17 01:17:42 INFO  Menu:25 - 5. Change product information
+2020-04-17 01:17:42 INFO  Menu:25 - 6. Filtration
+2020-04-17 01:17:42 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 01:17:42 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 01:17:42 INFO  Menu:25 - 9. Exit
+2020-04-17 01:17:44 INFO  EmbeddedProductDataBase:181 - Enter ID
+2020-04-17 01:17:45 INFO  EmbeddedProductDataBase:78 - Name: apple
+2020-04-17 01:17:45 INFO  EmbeddedProductDataBase:79 - ID: 0
+2020-04-17 01:17:45 INFO  EmbeddedProductDataBase:80 - Price: 15
+2020-04-17 01:17:45 INFO  EmbeddedProductDataBase:81 - Discount: 0.6
+2020-04-17 01:17:45 INFO  EmbeddedProductDataBase:82 - Description: aasd
+2020-04-17 01:17:45 INFO  EmbeddedProductDataBase:83 - Actual price: 6.0
+2020-04-17 01:17:45 INFO  EmbeddedProductDataBase:84 - Category: FRUITS
+
+2020-04-17 01:17:45 INFO  Menu:25 - 1. Add the product
+2020-04-17 01:17:45 INFO  Menu:25 - 2. Remove product
+2020-04-17 01:17:45 INFO  Menu:25 - 3. Find the product
+2020-04-17 01:17:45 INFO  Menu:25 - 4. Display all products
+2020-04-17 01:17:45 INFO  Menu:25 - 5. Change product information
+2020-04-17 01:17:45 INFO  Menu:25 - 6. Filtration
+2020-04-17 01:17:45 INFO  Menu:25 - 7. Set discount for category
+2020-04-17 01:17:45 INFO  Menu:25 - 8. Remove products from a specific category
+2020-04-17 01:17:45 INFO  Menu:25 - 9. Exit

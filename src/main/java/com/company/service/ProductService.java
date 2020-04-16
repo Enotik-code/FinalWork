@@ -1,42 +1,46 @@
 package com.company.service;
 
 import com.company.exception.ProductException;
+import com.company.logger.Loggers;
+import com.company.ranges.Ranges;
 
 import java.math.BigDecimal;
 
 public class ProductService {
+
+    static Loggers logger = new Loggers(ProductService.class.getName());
+
     public boolean validateDiscount(BigDecimal number) {
         try {
-            if ((number.compareTo(new BigDecimal(0)) == -1) || (number.compareTo(new BigDecimal(1)) == 1))
-                throw new ProductException("Discount should be form 0 to 1");
-            return (number.compareTo(new BigDecimal(-1)) != 0);
+            if (!Ranges.discountRange.contains(number))
+                throw new ProductException("The min id is 0");
+            return true;
         } catch (ProductException ex) {
-            System.out.println(ex.getMessage());
+            logger.log.warn(ex.getMessage());
             return false;
         }
     }
 
     public boolean validatePrice(BigDecimal number) {
         try {
-            if (number.signum() == -1) {
-                throw new ProductException("The min price is 0");
-            }
-            return (number.signum() != 0);
-        } catch (ProductException e) {
-            System.out.println(e.getMessage());
+            if (!Ranges.priceRange.contains(number))
+                throw new ProductException("The min id is 0");
+            return true;
+        } catch (ProductException ex) {
+            logger.log.warn(ex.getMessage());
             return false;
         }
-
     }
 
     public boolean validateId(Long number) {
         try {
-            if (number < -1)
-                throw new ProductException("The min id is 0");
-            return (number != -1);
-        } catch (ProductException ex) {
-            System.out.println(ex.getMessage());
-            return false;
-        }
+        if (!Ranges.idRange.contains(number))
+            throw new ProductException("The min id is 0");
+        return true;
+    } catch (ProductException ex) {
+        logger.log.warn(ex.getMessage());
+        return false;
     }
+}
+
 }

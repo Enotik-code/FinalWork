@@ -1,7 +1,10 @@
 package com.company.service;
 
+import com.company.enums.Menu;
+import com.company.logger.Loggers;
 import com.company.menuString.MenuString;
 import com.company.repository.EmbeddedProductDataBase;
+import com.company.logger.Loggers;
 
 import java.math.BigDecimal;
 import java.util.Locale;
@@ -12,6 +15,7 @@ public class MenuService {
     static Scanner in = new Scanner(System.in).useLocale(Locale.ROOT);
     static EmbeddedProductDataBase embeddedProductDataBase = new EmbeddedProductDataBase();
     static ProductService productService = new ProductService();
+    static Loggers logger = new Loggers(MenuService.class.getName());
 
     static Long id = -1l;
     static String name, description;
@@ -20,7 +24,7 @@ public class MenuService {
 
     public static int returnInt() {
         while (!in.hasNextInt()) {
-            System.out.println(MenuString.THIS_NOT_A_NUMBER);
+            logger.log.warn(MenuString.THIS_NOT_A_NUMBER);
             in.next();
         }
         number = in.nextInt();
@@ -29,13 +33,13 @@ public class MenuService {
 
     public static BigDecimal returnPrice() {
         while (!in.hasNextBigDecimal()) {
-            System.out.println(MenuString.THIS_NOT_A_NUMBER);
+            logger.log.warn(MenuString.THIS_NOT_A_NUMBER);
             in.next();
         }
         price = in.nextBigDecimal();
         while (!productService.validatePrice(price)) {
             while (!in.hasNextBigDecimal()) {
-                System.out.println(MenuString.THIS_NOT_A_NUMBER);
+                logger.log.warn(MenuString.THIS_NOT_A_NUMBER);
                 in.next();
             }
             price = in.nextBigDecimal();
@@ -45,7 +49,7 @@ public class MenuService {
 
     public static BigDecimal returnDiscount() {
         while (!in.hasNextBigDecimal()) {
-            System.out.println(MenuString.THIS_NOT_A_NUMBER);
+            logger.log.warn(MenuString.THIS_NOT_A_NUMBER);
             in.next();
         }
         discount = in.nextBigDecimal();
@@ -61,13 +65,13 @@ public class MenuService {
 
     public static Long returnId() {
         while (!in.hasNextLong()) {
-            System.out.println(MenuString.THIS_NOT_A_NUMBER);
+            logger.log.warn(MenuString.THIS_NOT_A_NUMBER);
             in.next();
         }
         id = in.nextLong();
         while (!productService.validateId(id)) {
             while (!in.hasNextLong()) {
-                System.out.println(MenuString.THIS_NOT_A_NUMBER);
+                logger.log.warn(MenuString.THIS_NOT_A_NUMBER);
                 in.next();
             }
             id = in.nextLong();
@@ -89,7 +93,7 @@ public class MenuService {
 
     public static void mainMenu() {
         while (true) {
-            MenuString.Menu();
+            Menu.MenuShow();
             switch (returnInt()) {
                 case 1:
                     embeddedProductDataBase.enterProduct();
@@ -107,7 +111,7 @@ public class MenuService {
                     embeddedProductDataBase.updateProduct();
                     break;
                 case 6:
-                    System.out.println(MenuString.CHOOSE_TYPE_OF_FILTRATION);
+                    logger.log.info(MenuString.CHOOSE_TYPE_OF_FILTRATION);
                     embeddedProductDataBase.filtration(returnInt());
                     break;
                 case 8:
@@ -119,7 +123,7 @@ public class MenuService {
                 case 9:
                     return;
                 default:
-                    System.out.println("Choose number between 1 and 7");
+                    logger.log.warn("Choose number between 1 and 7");
                     break;
             }
         }

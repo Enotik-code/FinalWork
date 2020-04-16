@@ -3,6 +3,7 @@ package com.company.repository;
 import com.company.bean.Product;
 import com.company.enums.Category;
 import com.company.interfaces.MapInterface;
+import com.company.logger.Loggers;
 import com.company.menuString.MenuString;
 import com.company.service.MenuService;
 
@@ -13,15 +14,10 @@ import java.util.Map;
 
 public class EmbeddedProductDataBase extends HashMap<Long, Product> implements MapInterface {
 
-    Product[] product = new Product[10];
+    Product[] product = new Product[50];
     static private int productNumber, number = 0;
-    static BigDecimal discount = new BigDecimal("0");
     static Long productCountLong = 0l;
-
-    @Override
-    public int getMapSize() {
-        return productMap.size();
-    }
+    static Loggers loggers = new Loggers(EmbeddedProductDataBase.class.getName());
 
     @Override
     public void addProduct(Long id, String name) {
@@ -31,7 +27,7 @@ public class EmbeddedProductDataBase extends HashMap<Long, Product> implements M
     @Override
     public void updateProduct() {
         while (true) {
-            System.out.println(MenuString.CHOOSE_TYPE_CHANGE + "\n" + "5.Exit\n");
+            loggers.log.info(MenuString.CHOOSE_TYPE_CHANGE);
             switch (MenuService.returnInt()) {
                 case 1:
                     changeName();
@@ -47,35 +43,26 @@ public class EmbeddedProductDataBase extends HashMap<Long, Product> implements M
                     break;
                 case 5:
                     return;
-
+                default:
+                    loggers.log.warn(MenuString.WRONG_TYPE);
             }
         }
     }
 
     @Override
     public void readProduct() {
-        System.out.println("Product's id" + productMap.keySet());
-        System.out.println("Product's name" + productMap.values());
+        loggers.log.info("Product ID:" + productMap.keySet() + "\nProduct's name" + productMap.values());
     }
 
     @Override
     public void deleteProduct() {
-        System.out.println(MenuString.ENTER_ID);
-        productMap.remove(MenuService.returnId());
-        System.out.println(MenuString.SUCCESSFULLY_DELETED);
-    }
-
-    @Override
-    public void checkProduct() {
-        System.out.println(MenuString.ENTER_NAME);
-        productMap.get(MenuService.returnName());
+        productMap.remove(enterId());
+        loggers.log.info(MenuString.SUCCESSFULLY_DELETED);
     }
 
     @Override
     public void findProduct() {
-        System.out.println(MenuString.ENTER_ID);
-        int productNumberToReturnProduct = Math.toIntExact(MenuService.returnId());
-        takeProduct(productNumberToReturnProduct);
+        takeProduct(Math.toIntExact(enterId()));
     }
 
     public void takeProduct(int num){
@@ -88,34 +75,27 @@ public class EmbeddedProductDataBase extends HashMap<Long, Product> implements M
     }
 
     public void setAndPrint(int num, BigDecimal actualPrice){
-        System.out.println("Name: " + product[num].getName());
-        System.out.println("ID: " + product[num].getId());
-        System.out.println("Price: " + product[num].getPrice());
-        System.out.println("Discount: " + product[num].getDiscount());
-        System.out.println("Description: " + product[num].getDescription());
-        System.out.println("Actual price: " + actualPrice);
-        System.out.println("Category: " + product[num].getCategoryList() + "\n");
-
+        loggers.log.info("Name: " + product[num].getName());
+        loggers.log.info("ID: " + product[num].getId());
+        loggers.log.info("Price: " + product[num].getPrice());
+        loggers.log.info("Discount: " + product[num].getDiscount());
+        loggers.log.info("Description: " + product[num].getDescription());
+        loggers.log.info("Actual price: " + actualPrice);
+        loggers.log.info("Category: " + product[num].getCategoryList() + "\n");
     }
 
     public void enterProduct() {
         product[productNumber] = new Product();
-        System.out.println(MenuString.ENTER_NAME);
-        product[productNumber].setName(MenuService.returnName());
+        product[productNumber].setName(enterName());
         product[productNumber].setId(productNumber);
-        System.out.println(MenuString.ENTER_PRICE);
-        product[productNumber].setPrice(MenuService.returnPrice());
-        System.out.println(MenuString.ENTER_DISCOUNT);
-        product[productNumber].setDiscount(MenuService.returnDiscount());
-        System.out.println(MenuString.ENTER_DESCRIPTION);
-        product[productNumber].setDescription(MenuService.returnDescription());
-        System.out.println(MenuString.ENTER_CATEGORY);
-        MenuString.CHOOSE_CATEGORY_LIST();
-        product[productNumber].setCategoryList(Category.chooseCategory(MenuService.returnInt()));
+        product[productNumber].setPrice(enterPrice());
+        product[productNumber].setDiscount(enterDiscount());
+        product[productNumber].setDescription(enterDescription());
+        product[productNumber].setCategoryList(enterCategory());
         addProduct(productCountLong, product[productNumber].getName());
         productNumber++;
         productCountLong++;
-        System.out.println(MenuString.PRODUCT_SUCCESSFULLY_ADDED);
+        loggers.log.info(MenuString.PRODUCT_SUCCESSFULLY_ADDED);
     }
 
     public void filtration(int typeOfFiltration) {
@@ -147,68 +127,83 @@ public class EmbeddedProductDataBase extends HashMap<Long, Product> implements M
             case 5:
                 return;
             default:
-                System.out.println("Choose number between 1-4");
+                loggers.log.info("Choose number between 1-4");
                 break;
         }
     }
 
     public void changeName() {
-        System.out.println(MenuString.ENTER_ID);
-        number = MenuService.returnInt();
-        System.out.println(MenuString.ENTER_NAME);
-        product[number].setName(MenuService.returnName());
+        product[enterId()].setName(enterName());
         productMap.replace((long) number, product[number].getName());
-        System.out.println(MenuString.SUCCESSFULLY_CHANGES);
+        loggers.log.info(MenuString.SUCCESSFULLY_CHANGES);
     }
 
     public void changePrice() {
-        System.out.println(MenuString.ENTER_ID);
-        number = MenuService.returnInt();
-        System.out.println(MenuString.ENTER_PRICE);
-        product[number].setPrice(MenuService.returnPrice());
-        System.out.println(MenuString.SUCCESSFULLY_CHANGES);
-
+        product[enterId()].setPrice(enterPrice());
+        loggers.log.info(MenuString.SUCCESSFULLY_CHANGES);
     }
 
     public void changeDiscount() {
-        System.out.println(MenuString.ENTER_ID);
-        number = MenuService.returnInt();
-        System.out.println(MenuString.ENTER_DISCOUNT);
-        product[number].setDiscount(MenuService.returnDiscount());
-        System.out.println(MenuString.SUCCESSFULLY_CHANGES);
-
+        product[enterId()].setDiscount(enterDiscount());
+        loggers.log.info(MenuString.SUCCESSFULLY_CHANGES);
     }
 
     public void changeDescription() {
-        System.out.println(MenuString.ENTER_ID);
-        number = MenuService.returnInt();
-        System.out.println(MenuString.ENTER_DESCRIPTION);
-        product[number].setDescription(MenuService.returnDescription());
-        System.out.println(MenuString.SUCCESSFULLY_CHANGES);
+        product[enterId()].setDescription(enterDescription());
+        loggers.log.info(MenuString.SUCCESSFULLY_CHANGES);
     }
 
     public void findProductByCategory(){
-        System.out.println(MenuString.ENTER_CATEGORY);
-        MenuString.CHOOSE_CATEGORY_LIST();
-        number = MenuService.returnInt();
         for (int i = 0; i <productMap.size() ; i++) {
-            if(product[i].getCategoryList().equals(Category.chooseCategory(number))){
+            if(product[i].getCategoryList().equals(enterCategory())){
             takeProduct(i);
             }
         }
     }
 
     public void setDiscountToCategory(){
-        System.out.println(MenuString.ENTER_CATEGORY);
-        MenuString.CHOOSE_CATEGORY_LIST();
+        showCategoryList();
         number = MenuService.returnInt();
-        System.out.println(MenuString.ENTER_DISCOUNT);
-        discount = MenuService.returnDiscount();
         for (int i = 0; i <productMap.size() ; i++) {
-            if(product[i].getCategoryList().equals(Category.chooseCategory(number))){
-                product[i].setDiscount(discount);
+            if(product[i].getCategoryList().equals(Category.chooseCategory(enterId()))){
+                product[i].setDiscount(enterDiscount());
             }
         }
-        System.out.println(MenuString.SUCCESSFULLY_CHANGES);
+        loggers.log.info(MenuString.SUCCESSFULLY_CHANGES);
+    }
+
+    public void showCategoryList(){
+        System.out.println(MenuString.ENTER_CATEGORY);
+        Category.showCategoryList();
+    }
+
+    public int enterId(){
+        loggers.log.info(MenuString.ENTER_ID);
+        return MenuService.returnInt();
+    }
+
+    public String enterDescription(){
+        loggers.log.info(MenuString.ENTER_DESCRIPTION);
+        return MenuService.returnDescription();
+    }
+
+    public String enterName(){
+        loggers.log.info(MenuString.ENTER_NAME);
+        return MenuService.returnName();
+    }
+
+    public BigDecimal enterPrice(){
+        loggers.log.info(MenuString.ENTER_PRICE);
+        return MenuService.returnPrice();
+    }
+
+    public BigDecimal enterDiscount(){
+        loggers.log.info(MenuString.ENTER_DISCOUNT);
+        return MenuService.returnDiscount();
+    }
+
+    public int enterCategory(){
+        showCategoryList();
+        return (MenuService.returnInt());
     }
 }
